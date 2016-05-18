@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-
 		var all = document.body.getElementsByTagName("*");
 		var colors = [ "blue","blue", "red", "yellow", "green", "grey" ];
 		for(var count =0; count < all.length; ++count) {
