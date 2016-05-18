@@ -1,7 +1,10 @@
-$(document).ready(function()
-{
-	var colors = [ "blue","blue", "red", "yellow", "green", "grey" ];
-	$("*").find("div").each(function() {    
-		$(this).css("border-color", colors[(Math.floor(Math.random() * (5 - 1 + 1)) + 1)] ).css("border-style","solid").css("border-width","medium");
-	});
+
+document.addEventListener('DOMContentLoaded', function() {
+
+		var all = document.body.getElementsByTagName("*");
+		var colors = [ "blue","blue", "red", "yellow", "green", "grey" ];
+		for(var count =0; count < all.length; ++count) {
+			item = all[count];
+			item.style.outline = "thick solid "+colors[(Math.floor(Math.random() * (5 - 1 + 1)) + 1)];
+		}
 });
