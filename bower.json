@@ -1,0 +1,21 @@
+{
+  "name": "TagHighlighter",
+  "main": "taghighlighter.js",
+  "homepage": "https://github.com/thedom85/TagHighlighter",
+  "authors": [
+    "Domenico Zinzi <domenicozinzi@gmail.com>",
+    "Fabio Del Bene <fabio.delbene@gmail.com>"
+  ],
+  "description": "Placing an Highlighter on every element html can help you figure out the page structure and errors",
+  "keywords": [
+    "debug-css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
