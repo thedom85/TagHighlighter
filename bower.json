@@ -1,6 +1,6 @@
 {
   "name": "TagHighlighter",
-  "main": "taghighlighter.js",
+  "main": "src/taghighlighter.js",
   "homepage": "https://github.com/thedom85/TagHighlighter",
   "authors": [
     "Domenico Zinzi <domenicozinzi@gmail.com>",
