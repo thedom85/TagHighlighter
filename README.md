@@ -4,7 +4,7 @@ Kill your css layout bugs faster.
 Placing an Highlighter on every element html can help you figure out the page structure and errors.
 
 
-#use
+#Local Development
 
 Download  the css file here   and include it in your html document like so
 
