@@ -23,7 +23,7 @@
 	};
 	// Pesticide Theme
 	function PesticideTheme(){
-		 var colors = {
+		 this.colors = {
 			'body': '#2980b9',
 			'article': '#3498db',
 			'nav': '#0088c3',
@@ -125,13 +125,19 @@
 			'wbr': '#db175b',
       };
 	}
-	
+	PesticideTheme.prototype = Object.create(Theme.prototype);
+	PesticideTheme.prototype.apply = function(el) {
+		var color = this.colors[el.tagName.toLowerCase()] || 'red';
+		el.style.outline = "thick solid "+color;
+	};
+
 	// Highliter Constructor
 	function Taghighlighter() {
 		var _ = this;
 		_.themes = {
 			random: new RandomTheme(),
-			easy: new EasyTheme()
+			easy: new EasyTheme(),
+			pesticide: new PesticideTheme()
 		};
 	};
 
@@ -141,7 +147,7 @@
 		else throw new Error('not found theme: '+name);
 	};
 
-	
+
 	Taghighlighter.prototype.Hlighter = function(tagName,theme){
 		var _ = this;
 		if(!tagName)tagName="*";
@@ -151,9 +157,9 @@
 			theme.apply(all[count]);
 		}
 	}
-	
-	
-	
+
+
+
 	// Singleton Window Global variable
 	if (typeof window.taghighlighter == "undefined") {
 	    window.taghighlighter = new Taghighlighter();
