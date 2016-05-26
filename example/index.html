@@ -9,12 +9,17 @@
      <script src="../src/taghighlighter.js"></script>
 	 <script type='text/javascript'>
 	document.addEventListener("DOMContentLoaded", function(event) {
-    console.log(taghighlighter.getTheme('random'));
+		console.log(taghighlighter.getTheme('random'));
 		taghighlighter.Hlighter("*","random");
-		for (var i = 1; i <= 500; i++) {
-				if (i%2 == 1) setTimeout(	taghighlighter.Hlighter("*","easy"),10);
-				else		  setTimeout(	taghighlighter.Hlighter("*","random"),   10);
-		}
+		i=0;
+		function animation_loop() {
+			
+				if (i%2 == 1) 	taghighlighter.Hlighter("*","easy");
+				else		    taghighlighter.Hlighter("*","random");   
+			setTimeout(function() { i++; if (i < 50000) { animation_loop(); } }, 3000);
+		};
+		animation_loop();
+	
 
 	});
 
