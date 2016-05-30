@@ -131,7 +131,7 @@
 		el.style.outline = "thick solid "+color;
 	};
 	
-	// Theme Mondrian
+	//MondrianTheme 
 	function MondrianTheme(){
 		this.colors = [ "blue","blue", "red", "yellow", "green", "grey" ];
 	};
@@ -139,7 +139,14 @@
 	MondrianTheme.prototype.apply = function(el) {
 		el.style.background = this.colors[(Math.floor(Math.random() * (5 - 1 + 1)) + 1)];
 	};
-	
+	//WhiteTheme 
+	function WhiteTheme(){
+		this.colors = [ "white" ];
+	};
+	WhiteTheme.prototype = Object.create(Theme.prototype);
+	WhiteTheme.prototype.apply = function(el) {
+		el.style.background = this.colors[0];
+	};
 
 	// Highliter Constructor
 	function Taghighlighter() {
@@ -148,7 +155,8 @@
 			random: new RandomTheme(),
 			easy: new EasyTheme(),
 			pesticide: new PesticideTheme(),
-			mondrian:  new MondrianTheme()
+			mondrian:  new MondrianTheme(),
+			white: 	   new WhiteTheme()
 		};
 	};
 
