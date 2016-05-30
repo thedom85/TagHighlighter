@@ -13,7 +13,7 @@ Download  the css file here   and include it in your html document like so
 Adding a file to the head of your html document can kind of be a pain if you are toggling it on and off. You can add taghigHlighter as a sass partial and it will only render out if you set
 
 ```javascript
-  <script src="taghighlighter.js"></script>
+<script src="taghighlighter.js"></script>
 taghighlighter.Hlighter("*","easy");
 taghighlighter.Hlighter("*","random"); 
 taghighlighter.Hlighter("*","pesticide"); 
