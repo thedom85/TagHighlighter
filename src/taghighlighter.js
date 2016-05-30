@@ -130,6 +130,16 @@
 		var color = this.colors[el.tagName.toLowerCase()] || 'red';
 		el.style.outline = "thick solid "+color;
 	};
+	
+	// Theme Mondrian
+	function MondrianTheme(){
+		this.colors = [ "blue","blue", "red", "yellow", "green", "grey" ];
+	};
+	MondrianTheme.prototype = Object.create(Theme.prototype);
+	MondrianTheme.prototype.apply = function(el) {
+		el.style.background = this.colors[(Math.floor(Math.random() * (5 - 1 + 1)) + 1)];
+	};
+	
 
 	// Highliter Constructor
 	function Taghighlighter() {
@@ -137,7 +147,8 @@
 		_.themes = {
 			random: new RandomTheme(),
 			easy: new EasyTheme(),
-			pesticide: new PesticideTheme()
+			pesticide: new PesticideTheme(),
+			mondrian:  new MondrianTheme()
 		};
 	};
 
