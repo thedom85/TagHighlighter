@@ -13,10 +13,11 @@
 		taghighlighter.Hlighter("*","pesticide");
 		i=0;
 		function animation_loop() {
-				if(i==4)i=1;
+				if(i==5)i=1;
 				if (i == 1) 	 	taghighlighter.Hlighter("*","easy");
 				else if(i == 2)		taghighlighter.Hlighter("*","random");   
 				else if(i == 3)		taghighlighter.Hlighter("*","pesticide");   
+				else if(i == 4)		taghighlighter.Hlighter("*","mondrian");
 			setTimeout(function() { i++; if (true) {  animation_loop(); } }, 3000);
 		};
 		animation_loop();
