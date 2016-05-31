@@ -14,6 +14,9 @@ Adding a file to the head of your html document can kind of be a pain if you are
 
 ```javascript
 <script src="taghighlighter.js"></script>
+```
+
+```javascript
 taghighlighter.Hlighter("*","easy");
 taghighlighter.Hlighter("*","random"); 
 taghighlighter.Hlighter("*","pesticide"); 
