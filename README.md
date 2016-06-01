@@ -29,8 +29,14 @@ taghighlighter.Hlighter("*","random");
 ```
 The Theme Random  chooses a set of colors at random to contour  the selected tag.
 
+### Theme Pesticide
 ```javascript
 taghighlighter.Hlighter("*","pesticide"); 
+```
+The Theme Random  elates the type of tag with a color to contour  the selected tag.
+
+
+```javascript
 taghighlighter.Hlighter("*","mondrian");
 taghighlighter.Hlighter("*","white");
 ```
