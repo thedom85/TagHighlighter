@@ -20,10 +20,15 @@ Adding a file to the head of your html document can kind of be a pain if you are
 ```javascript
 taghighlighter.Hlighter("*","easy");
 ```
-The theme Easy  is the most essential it 's the easiest and limits to highlight yellow the selected tag
+The theme Easy  is the most essential it 's the easiest and limits to highlight yellow the selected tag.
 
+
+### Theme Random
 ```javascript
 taghighlighter.Hlighter("*","random"); 
+```
+
+```javascript
 taghighlighter.Hlighter("*","pesticide"); 
 taghighlighter.Hlighter("*","mondrian");
 taghighlighter.Hlighter("*","white");
