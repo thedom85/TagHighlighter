@@ -36,11 +36,17 @@ taghighlighter.Hlighter("*","pesticide");
 The Theme Random  elates the type of tag with a color to contour  the selected tag.
 
 
+### Theme Mondrian
 ```javascript
 taghighlighter.Hlighter("*","mondrian");
+```
+The Theme Mondrian is a tribute to the great Piet Mondrian (Tableau I, 1921).
+
+### Theme White
+```javascript
 taghighlighter.Hlighter("*","white");
 ```
-
+The Theme Mondrian is a tribute to the great album  White Album (The Beatles )
 
   
 
