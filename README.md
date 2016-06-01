@@ -18,11 +18,15 @@ Adding a file to the head of your html document can kind of be a pain if you are
 
 ```javascript
 taghighlighter.Hlighter("*","easy");
+```
+
+```javascript
 taghighlighter.Hlighter("*","random"); 
 taghighlighter.Hlighter("*","pesticide"); 
 taghighlighter.Hlighter("*","mondrian");
 taghighlighter.Hlighter("*","white");
 ```
+
 
   
 
