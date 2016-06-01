@@ -46,7 +46,7 @@ The Theme Mondrian is a tribute to the great Piet Mondrian (Tableau I, 1921).
 ```javascript
 taghighlighter.Hlighter("*","white");
 ```
-The Theme Mondrian is a tribute to the great album  White Album (The Beatles )
+The Theme White is a tribute to the great album  White Album (The Beatles )
 
   
 
