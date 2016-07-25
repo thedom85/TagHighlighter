@@ -3,8 +3,18 @@
 Kill your css layout bugs faster.
 Placing an Highlighter on every element html can help you figure out the page structure and errors. 
 
+# Getting Started
 
-#Local Development
+via Bower: by running
+
+```bash
+$bower install tag-highlighter
+```
+
+from your console
+
+
+or
 
 Download  the css file here   and include it in your html document like so
 
@@ -15,6 +25,8 @@ Adding a file to the head of your html document can kind of be a pain if you are
 ```javascript
 <script src="taghighlighter.js"></script>
 ```
+
+# Templates
 
 ### Theme Easy
 ```javascript
